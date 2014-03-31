@@ -97,7 +97,7 @@ public:
 @brief    A simple text input field with TTF font.
 @js NA
 */
-class CC_DLL CCTextFieldTTF : public CCLabelTTF, public CCIMEDelegate
+class CC_DLL CCTextFieldTTF : public CCIMEDelegate, public CCLabelTTF
 {
 public:
     /**

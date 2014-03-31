@@ -104,7 +104,8 @@ void GUIReader::storeFileDesignSize(const char *fileName, const cocos2d::CCSize 
         return;
     }
     cocos2d::CCString* strSize = cocos2d::CCString::createWithFormat("{%f,%f}", size.width, size.height);
-    _fileDesignSizes->setObject(strSize, fileName);
+    std::string stringFileName = fileName;
+    _fileDesignSizes->setObject(strSize, stringFileName);
 }
 
 const cocos2d::CCSize GUIReader::getFileDesignSize(const char* fileName) const

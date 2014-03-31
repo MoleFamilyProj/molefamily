@@ -35,9 +35,9 @@ bool HelloWorld::init()
 
 	gui::UILayer* UiLayer = gui::UILayer::create();
 	addChild(UiLayer);
-
-	//gui::Widget* widget = GUIReader::shareReader()->widgetFromJsonFile("SampleUIAnimation/SampleUIAnimation.json");
-	gui::Widget* widget = GUIReader::shareReader()->widgetFromJsonFile("DemoShop/DemoShop.json");
+    
+    gui::Widget* widget = GUIReader::shareReader()->widgetFromJsonFile("SampleUIAnimation/SampleUIAnimation.json");
+	//gui::Widget* widget = GUIReader::shareReader()->widgetFromJsonFile("DemoShop/DemoShop.json");
 	UiLayer->addWidget(widget);
 	//this->add
  //   CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
