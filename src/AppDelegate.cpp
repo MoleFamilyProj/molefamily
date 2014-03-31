@@ -58,6 +58,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     
     vector<string> searchPath;
+	//pDirector->setContentScaleFactor(0.5f);
+
 
     // In this demo, we select resource according to the frame's height.
     // If the resource size is different from design resolution size, you need to set contentScaleFactor.
